@@ -1,0 +1,32 @@
+.main_item{
+    background-color: #feffc9;
+}
+
+.main_item > li + li:before{
+    color: #ffeccc;
+    font-family: "Glyphicons Halflings";
+    content: "\e080";
+    font-size: 12px;
+}
+
+.form_request{
+
+}
+
+.catalog a {
+	font-size: 18px;
+}
+
+.clear {
+    height: 35px;
+}
+
+.partnerblock{
+    border: 2px solid #ffeccc;
+}
+
+.partnerblock_home{
+    margin-top: 50%;
+	border: 1px solid #ffeccc;
+    padding: 10px;
+}
