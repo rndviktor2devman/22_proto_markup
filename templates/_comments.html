@@ -1,0 +1,28 @@
+<div class="col-md-10 comment">
+    <div class="col-md-8 col-md-offset-2 carousel-wrapper">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                {% for item in range(items) %}
+                <div class="item {% if item == 0 %} active {% endif %}">
+                    <div class="col-md-2 text-center">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </div>
+                    <div class="col-md-10">
+                        <p><b>{{ user_info }}</b></p>
+                        <p>{{ item_comment }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-triangle-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-triangle-right"></span>
+            </a>
+        </div>
+        <div class="col-md-2 mybutton text-center">
+            <button type="submit" class="btn btn-default">Оставить отзыв</button>
+        </div>
+    </div>
+</div>
