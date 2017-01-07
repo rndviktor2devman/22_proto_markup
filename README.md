@@ -2,7 +2,7 @@
 
 ###Mockup demo
 
-This [site](https://rndviktor2devman.github.io/22_proto_markup/) demonstrates provided sketches assembled as static site
+This [site](https://rndviktor2devman.github.io/22_proto_markup/static/index) demonstrates provided sketches assembled as static site
 
 ###Environment
 Before start install requirements:
