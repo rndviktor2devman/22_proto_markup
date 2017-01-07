@@ -10,7 +10,23 @@
 }
 
 .form_request{
+    margin-bottom: 25px;
+}
 
+.request_block{
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+button.large{
+    border-radius: 25px;
+    width: 270px;
+}
+
+.request_subform{
+    line-height: 70px;
+    padding-right: 10px;
 }
 
 .catalog a {
@@ -19,6 +35,30 @@
 
 .clear {
     height: 35px;
+}
+
+.comment{
+    margin-bottom: 25px;
+}
+
+.carousel-wrapper{
+    margin-right: 30px;
+}
+
+.carousel-control.right{
+    position: absolute;
+	right: -65px;
+    top: 25px;
+}
+
+.carousel-control.left {
+	position: absolute;
+	left: -65px;
+	top: 25px;
+}
+
+.mybutton > button {
+	margin: 40px auto;
 }
 
 .partnerblock{
