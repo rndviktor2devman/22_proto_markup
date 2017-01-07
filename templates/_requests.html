@@ -1,0 +1,41 @@
+<div class="form_request col-md-10">
+    <div class="request_block col-md-12">
+        <h2 class="text-center">{{ request }}</h2>
+        <div class="col-md-8">
+            раздел: <a href="#" data-toggle="dropdown" class="dropdown-toggle">Все<b class="caret"></b></a>
+            <ul class="dropdown-menu section">
+                <li><a href="#">first</a></li>
+                <li><a href="#">second</a></li>
+            </ul>
+        </div>
+        <div class="col-md-8 text-right">
+            регион: <a href="#" data-toggle="dropdown" class="dropdown-toggle">Новосибирск и область <b class="caret"></b></a>
+            <ul class="dropdown-menu dropdown-menu-right regions"></ul>
+        </div>
+    </div>
+    <div class="requests">
+        {% for comment in range(comments) %}
+        <div class="request_block col-md-12">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="text-muted">{{comment_time}}</p>
+                </div>
+                <div class="col-md-8 text-right">
+                    <a href="#"><span class="glyphicon glyphicon-star"></span>В закладки</a>
+                </div>
+            </div>
+            <p>{{request_text}}</p>
+            <p class="name">{{request_name}}</p>
+            <button type="submit" class="btn btn-default">Показать телефон</button>
+            <span class="text-muted">{{views_count}} просмотров</span>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="text-center">
+        {% if page == 'index' %}
+            <a href="requests.html" class="btn btn-default large">Посмотреть заявки</a>
+        {% else %}
+            <button class="btn btn-default large">Показать еще</button>
+        {% endif %}
+    </div>
+</div>
