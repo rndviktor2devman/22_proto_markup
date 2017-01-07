@@ -52,15 +52,29 @@ catalog_data = {
     'show_footer': True
 }
 
+companies_data = {
+    'user': 'Леонид Федорович',
+    'title': 'Каталог организаций',
+    'items': 4,
+    'footer': True
+}
+company_data = {
+    'user': 'Леонид Федорович',
+    'title': 'Информация о организации',
+    'footer': True
+}
+
 index_data.update(comments_data)
 requests_data.update(comments_data)
 catalog_data.update(partners_data)
+companies_data.update(partners_data)
 
 if __name__ == '__main__':
     site = staticjinja.make_site(outpath='static', contexts=[
         ('index.html', index_data),
         ('catalog.html', catalog_data),
         ('private.html', private_data),
-        ('requests.html', requests_data)
+        ('requests.html', requests_data),
+        ('company.html', company_data)
     ])
     site.render()
