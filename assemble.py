@@ -55,7 +55,7 @@ catalog_data = {
 companies_data = {
     'user': 'Леонид Федорович',
     'title': 'Каталог организаций',
-    'items': 4,
+    'items': 5,
     'footer': True
 }
 company_data = {
@@ -75,6 +75,7 @@ if __name__ == '__main__':
         ('catalog.html', catalog_data),
         ('private.html', private_data),
         ('requests.html', requests_data),
-        ('company.html', company_data)
+        ('company.html', company_data),
+        ('companies.html', companies_data)
     ])
     site.render()
