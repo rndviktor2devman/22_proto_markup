@@ -1,8 +1,8 @@
-.main_item{
+.basic_element{
     background-color: #fff;
 }
 
-.main_item > li + li:before {
+.basic_element > li + li:before {
 	color: #ccc;
 	font-family: "Glyphicons Halflings";
 	content: "\e080";
