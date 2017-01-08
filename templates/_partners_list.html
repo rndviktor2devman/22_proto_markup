@@ -8,12 +8,12 @@
         <p>{{ partner_area }}</p>
         <p>{{ partner_production }}</p>
         <p>{{ partner_address }}</p>
-        <p>{{ partner_contact_phone }}</p>
+        <p>{{ partner_phone }}</p>
     </div>
-    {% if item == 0 %}
+</div>
+{% if item == 0 %}
     <div class="col-md-2 text-center">
         <a href="index.html" class="btn btn-default">Оставить заявку</a>
     </div>
-    {% endif %}
-</div>
+{% endif %}
 {% endfor %}

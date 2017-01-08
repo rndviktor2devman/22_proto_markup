@@ -81,16 +81,14 @@ button.large{
 	margin: 40px auto;
 }
 
-.partnerblock{
-    border: 2px solid #ffeccc;
+.partnerblock {
+	border: 2px solid #ccc;
 }
-
 .partnerblock > div > span {
-    margin-top: 50%;
-	border: 1px solid #ffeccc;
-    padding: 10px;
+	margin-top: 50%;
+	border: 1px solid #ccc;
+	padding: 10px;
 }
-
 .partnerblock > div > p {
 	margin-bottom: 5px;
 }

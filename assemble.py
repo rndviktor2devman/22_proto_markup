@@ -41,7 +41,7 @@ partners_data = {
     'partner_area': 'Место деятельности: Новосибирск',
     'partner_production': 'Продукция: ЖБИ, бетон',
     'partner_address': 'Адрес: Под часами, на том-же месте',
-    'partner_contact_phone': '00-00-00'
+    'partner_phone': '00-00-00'
 }
 
 catalog_data = {
@@ -55,12 +55,12 @@ companies_data = {
     'user': 'Леонид Федорович',
     'title': 'Каталог организаций',
     'items': 5,
-    'footer': True
+    'show_footer': True
 }
 company_data = {
     'user': 'Леонид Федорович',
     'title': 'Информация о организации',
-    'footer': True
+    'show_footer': True
 }
 
 index_data.update(comments_data)
