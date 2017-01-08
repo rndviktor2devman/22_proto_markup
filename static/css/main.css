@@ -1,8 +1,8 @@
-.basic_element{
+.breadcrumb{
     background-color: #fff;
 }
 
-.basic_element > li + li:before {
+.breadcrumb > li + li:before {
 	color: #ccc;
 	font-family: "Glyphicons Halflings";
 	content: "\e080";
