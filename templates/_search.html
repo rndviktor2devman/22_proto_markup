@@ -8,7 +8,7 @@
     <div class="text-center col-md-8 col-md-offset-2">
         <h1 class="text-uppercase">Вам позвонят лучшие поставщики Новосибирска</h1>
     </div>
-    <div class="col-md-8 col-md-offset-2 form_request">
+    <div class="col-md-8 col-md-offset-2 create_request">
         <div class="form-horizontal">
             <div class="form-group">
                 <div class="col-md-10 col-md-offset-1">
@@ -34,6 +34,34 @@
                             <input type="checkbox">Бетон / Раствор
                         </label>
                     </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10 col-sm-offset-2">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">в Новосибирск и область <b class="caret"></b></a>
+                    <ul class="dropdown-menu regions"></ul>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="description" class="col-md-2 text-right"> Описание *</label>
+                <div class="col-md-10">
+                    <textarea class="form-control" rows="2" id="description"></textarea>
+                    <p class="text-muted">Пример: нужно фбс 24.4.6 50шт плиты пк 20 ПК 60-20-12 доставка в Новолуговое</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="col-md-2 text-right control-label">Телефон *</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="phone" placeholder="Номер телефона">
+                </div>
+                <label for="name" class="col-md-2 text-right control-label">Имя *</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="name" placeholder="Ваше имя">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="text-center">
+                    <button type="submit" class="btn btn-default text-uppercase large">Опубликовать заявку</button>
                 </div>
             </div>
         </div>

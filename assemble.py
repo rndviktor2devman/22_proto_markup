@@ -34,7 +34,7 @@ private_data = {
     'user': 'Леонид Федорович',
     'title': 'Каталог организаций',
     'items': 7,
-    'show_footer': True
+    'show_footer': False
 }
 
 partners_data = {
@@ -46,7 +46,7 @@ partners_data = {
 }
 
 catalog_data = {
-    'user': 'Some user',
+    'user': 'Леонид Федорович',
     'title': 'Catalog',
     'items': 5,
     'show_footer': True
