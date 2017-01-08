@@ -35,3 +35,9 @@ $.getJSON('https://api.sypexgeo.net').done(function (location){
 });
 
 $('.carousel').carousel({interval: 3000});
+
+var regionList = ['Амурская область', 'Архангельская область', 'Астраханская область', 'Белгородская область', 'Брянская область'];
+$.each(regionList, function(i){
+	var li = '<li><a href=#>' + regionList[i] + '</a></li>';
+	$('ul.dropdown-menu.regions').append(li)
+})

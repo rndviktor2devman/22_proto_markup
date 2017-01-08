@@ -32,8 +32,7 @@ requests_data = {
 
 private_data = {
     'user': 'Леонид Федорович',
-    'title': 'Каталог организаций',
-    'items': 7,
+    'title': 'Личный кабинет',
     'show_footer': False
 }
 

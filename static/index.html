@@ -9,7 +9,21 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-<div class="container">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Регион: Новосибирск и область <b class="caret"></b></a>
+                <ul class="dropdown-menu regions"></ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="private.html"><span class="glyphicon glyphicon-user"></span>Леонид Федорович</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>Выход</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="wrapper container">
     <div class="row">
         
 <div class="search">
@@ -22,7 +36,7 @@
     <div class="text-center col-md-8 col-md-offset-2">
         <h1 class="text-uppercase">Вам позвонят лучшие поставщики Новосибирска</h1>
     </div>
-    <div class="col-md-8 col-md-offset-2 form_request">
+    <div class="col-md-8 col-md-offset-2 create_request">
         <div class="form-horizontal">
             <div class="form-group">
                 <div class="col-md-10 col-md-offset-1">
@@ -50,21 +64,49 @@
                     </div>
                 </div>
             </div>
+            <div class="form-group">
+                <div class="col-md-10 col-sm-offset-2">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">в Новосибирск и область <b class="caret"></b></a>
+                    <ul class="dropdown-menu regions"></ul>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="description" class="col-md-2 text-right"> Описание *</label>
+                <div class="col-md-10">
+                    <textarea class="form-control" rows="2" id="description"></textarea>
+                    <p class="text-muted">Пример: нужно фбс 24.4.6 50шт плиты пк 20 ПК 60-20-12 доставка в Новолуговое</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="col-md-2 text-right control-label">Телефон *</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="phone" placeholder="Номер телефона">
+                </div>
+                <label for="name" class="col-md-2 text-right control-label">Имя *</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="name" placeholder="Ваше имя">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="text-center">
+                    <button type="submit" class="btn btn-default text-uppercase large">Опубликовать заявку</button>
+                </div>
+            </div>
         </div>
     </div>
 
 </div>
 <div class="form_request col-md-10">
     <div class="request_block col-md-12">
-        <h2 class="text-center"></h2>
-        <div class="col-md-8">
+        <h2 class="text-center">Главная | Поиск</h2>
+        <div class="col-md-6">
             раздел: <a href="#" data-toggle="dropdown" class="dropdown-toggle">Все<b class="caret"></b></a>
             <ul class="dropdown-menu section">
                 <li><a href="#">first</a></li>
                 <li><a href="#">second</a></li>
             </ul>
         </div>
-        <div class="col-md-8 text-right">
+        <div class="col-md-6 text-right">
             регион: <a href="#" data-toggle="dropdown" class="dropdown-toggle">Новосибирск и область <b class="caret"></b></a>
             <ul class="dropdown-menu dropdown-menu-right regions"></ul>
         </div>
@@ -73,10 +115,10 @@
         
         <div class="request_block col-md-12">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <p class="text-muted">вчера, в 12:50</p>
                 </div>
-                <div class="col-md-8 text-right">
+                <div class="col-md-6 text-right">
                     <a href="#"><span class="glyphicon glyphicon-star"></span>В закладки</a>
                 </div>
             </div>
@@ -89,10 +131,10 @@
         
         <div class="request_block col-md-12">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <p class="text-muted">вчера, в 12:50</p>
                 </div>
-                <div class="col-md-8 text-right">
+                <div class="col-md-6 text-right">
                     <a href="#"><span class="glyphicon glyphicon-star"></span>В закладки</a>
                 </div>
             </div>
@@ -105,10 +147,10 @@
         
         <div class="request_block col-md-12">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <p class="text-muted">вчера, в 12:50</p>
                 </div>
-                <div class="col-md-8 text-right">
+                <div class="col-md-6 text-right">
                     <a href="#"><span class="glyphicon glyphicon-star"></span>В закладки</a>
                 </div>
             </div>
@@ -121,10 +163,10 @@
         
         <div class="request_block col-md-12">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <p class="text-muted">вчера, в 12:50</p>
                 </div>
-                <div class="col-md-8 text-right">
+                <div class="col-md-6 text-right">
                     <a href="#"><span class="glyphicon glyphicon-star"></span>В закладки</a>
                 </div>
             </div>
@@ -138,12 +180,12 @@
     </div>
     <div class="text-center">
         
-            <a href="requests.html" class="btn btn-default large">Посмотреть заявки</a>
+            <a href="requests.html" class="btn btn-default large">Посмотреть все заявки</a>
         
     </div>
 </div>
-<div class="col-md-10 comment">
-    <div class="col-md-8 col-md-offset-2 carousel-wrapper">
+<div class="col-md-12 comments">
+    <div class="col-md-6 col-md-offset-3 carousel-wrapper">
         <div class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 
@@ -194,9 +236,9 @@
                 <span class="glyphicon glyphicon-triangle-right"></span>
             </a>
         </div>
-        <div class="col-md-2 mybutton text-center">
-            <button type="submit" class="btn btn-default">Оставить отзыв</button>
-        </div>
+    </div>
+    <div class="col-md-2 mybutton text-center">
+        <button type="submit" class="btn btn-default">Оставить отзыв</button>
     </div>
 </div>
 
@@ -209,6 +251,48 @@
         <div class="container">
             <div class="panel-body text-center">
                 <h2>Вы поставщик?</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Для доступа к телефонам покупателей заполните форму или позвоните нам <span class="text-nowrap">+7 999 888-77-66</span></p><br>
+					<p>Текст с дополнительной информацией по условиям сотрудничества.</p>
+					<p>Возможно стоит вынести его на отдельную страницу.</p>
+					<p>Текст с дополнительной информацией по условиям сотрудничества.</p>
+                    <p>Возможно стоит вынести его на отдельную страницу.</p>
+                </div>
+                <div class="col-md-6">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="organization">Организация</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="organization" placeholder="Организация">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="form_phone">Телефон</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="form_phone" placeholder="Телефон">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Email</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="email" placeholder="Введите email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="form_name">Имя</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="form_name" placeholder="Введите имя">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Отправить информацию</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

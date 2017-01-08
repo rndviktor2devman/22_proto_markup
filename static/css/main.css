@@ -1,16 +1,22 @@
 .main_item{
-    background-color: #feffc9;
+    background-color: #fff;
 }
 
-.main_item > li + li:before{
-    color: #ffeccc;
-    font-family: "Glyphicons Halflings";
-    content: "\e080";
-    font-size: 12px;
+.main_item > li + li:before {
+	color: #ccc;
+	font-family: "Glyphicons Halflings";
+	content: "\e080";
+	font-size: 12px;
 }
 
-.form_request{
+.form_request {
     margin-bottom: 25px;
+}
+
+.create_request {
+    background-color: #f8f8f8;
+    border: 1px solid grey;
+    border-radius: 5px;
 }
 
 ul.nav li.dropdown:hover > ul.dropdown-menu {
@@ -53,6 +59,12 @@ button.large{
     outline: 3px solid #ccc;
 }
 
+.carousel-control {
+    background-image: none !important;
+    color: grey;
+   font-size: 48px;
+}
+
 .carousel-control.right{
     position: absolute;
 	right: -65px;
@@ -85,5 +97,5 @@ button.large{
 
 .glyphicon-home{
     font-size: 50px;
-    color: #ffeccc;
+    color: #ccc;
 }
