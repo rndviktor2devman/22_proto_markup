@@ -9,7 +9,21 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-<div class="container">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Регион: Новосибирск и область <b class="caret"></b></a>
+                <ul class="dropdown-menu regions"></ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="private.html"><span class="glyphicon glyphicon-user"></span>{{user}}</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>Выход</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="wrapper container">
     <div class="row">
         {% block content %}
         {% endblock %}

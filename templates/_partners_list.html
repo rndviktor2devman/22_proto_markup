@@ -1,17 +1,19 @@
 {% for item in range(items) %}
 <div class="partnerblock" col-md-9>
-    <div class="text-center col-md-2">
-        <span class="partnerblock_home glyphicon glyphicon-home"></span>
+    <div class="col-md-2 text-center">
+        <span class="glyphicon glyphicon-home"></span>
     </div>
-    <div class="col-md-9">
+    <div class="col-md-8">
         <h4>{{ partner_name }}</h4>
         <p>{{ partner_area }}</p>
         <p>{{ partner_production }}</p>
         <p>{{ partner_address }}</p>
         <p>{{ partner_contact_phone }}</p>
     </div>
-    {% if item == null %}
+    {% if item == 0 %}
+    <div class="col-md-2 text-center">
         <a href="index.html" class="btn btn-default">Оставить заявку</a>
+    </div>
     {% endif %}
 </div>
 {% endfor %}

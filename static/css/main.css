@@ -13,6 +13,10 @@
     margin-bottom: 25px;
 }
 
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+	display: block;
+}
+
 .request_block{
     border-bottom: 1px solid grey;
     padding-bottom: 10px;
@@ -33,16 +37,20 @@ button.large{
 	font-size: 18px;
 }
 
-.clear {
-    height: 35px;
+.empty {
+    height: 40px;
 }
 
-.comment{
+.comments {
     margin-bottom: 25px;
 }
 
 .carousel-wrapper{
     margin-right: 30px;
+}
+
+.carousel-inner{
+    outline: 3px solid #ccc;
 }
 
 .carousel-control.right{
@@ -65,8 +73,17 @@ button.large{
     border: 2px solid #ffeccc;
 }
 
-.partnerblock_home{
+.partnerblock > div > span {
     margin-top: 50%;
 	border: 1px solid #ffeccc;
     padding: 10px;
+}
+
+.partnerblock > div > p {
+	margin-bottom: 5px;
+}
+
+.glyphicon-home{
+    font-size: 50px;
+    color: #ffeccc;
 }
